@@ -51,11 +51,11 @@ while(stringChoice != "Quit" or "quit"):
         secondCombo = drawBoard[int(j[1][0])][int(j[1][2])]
         thirdCombo = drawBoard[int(j[2][0])][int(j[2][2])]
 
-        if(firstCombo == secondCombo and firstCombo == thirdCombo and firstCombo != "_"):   # If statement that compiles winning combinations
-            print ("Congrats Player " + str(intCount) + "! You have won the game!")
-            print ("\n")
-            intRounds = 9   # Rounds set to 9 to indicate board is full - so it ends game.
-            break
+    if(firstCombo == secondCombo and firstCombo == thirdCombo and firstCombo != "_"):   # If statement that compiles winning combinations
+        print ("Congrats Player " + str(intCount) + "! You have won the game!")
+        print ("\n")
+        intRounds = 9   # Rounds set to 9 to indicate board is full - so it ends game.
+        break
         
     if(intCount == 1):  # If player 1 ("X") has finished, go to player 2
             intCount = 2
